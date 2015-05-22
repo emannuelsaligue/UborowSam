@@ -26,8 +26,17 @@ else
     //Hurray I'm online
 }
 	  }
+functions checkconnection(){
+    var networkState = navigator.connection.type;
+    if (networkState == Connection.NONE){
+                alert('No Internet');
 
+    }else{
+
+                   alert('Internet Connection there' +Connection.NONE);
+    }
+}
 </script>
-
+<input type="button" onclick="checkconnection();" name="CLICK ME" value="Click me" />
 </body>
 </html>
